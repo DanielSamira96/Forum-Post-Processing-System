@@ -1,0 +1,1419 @@
+{
+  "description": "Automotive Forum Posts Dataset for Benchmark Testing",
+  "metadata": {
+    "total_posts": 100,
+    "topics": ["odometer", "key programming", "service activation", "immobilizer", "engine tuning"],
+    "posts_per_topic": 20,
+    "suspicious_score_distribution": {
+      "1": 40,
+      "2": 20,
+      "3": 20,
+      "4": 15,
+      "5": 5
+    },
+    "created_date": "2024-10-27",
+    "purpose": "Ground truth dataset for benchmarking automotive forum post processing systems"
+  },
+  "posts": [
+    {
+      "id": "post_001",
+      "title": "Odometer reading incorrect after battery replacement",
+      "content": "Hi everyone, I recently replaced the battery in my 2018 Honda Civic and now the odometer is showing weird readings. It was at 85,432 miles before the battery died, but now it's showing 85,401 miles. Is this normal after a battery replacement? The trip meter also reset to zero. Should I be concerned about this 31-mile difference? I've heard that some cars store odometer data in volatile memory. Any advice would be appreciated.",
+      "author": "honda_owner_2018",
+      "timestamp": "2024-01-15T09:30:00Z",
+      "forum_section": "general_discussion",
+      "ground_truth": {
+        "summary": "User's odometer shows incorrect lower reading after battery replacement in 2018 Honda Civic, concerned about 31-mile difference and trip meter reset.",
+        "keywords": ["odometer", "battery replacement", "Honda Civic", "mileage", "trip meter", "volatile memory"],
+        "topic": "odometer",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_002",
+      "title": "Professional odometer rollback service - guaranteed results",
+      "content": "Looking for reliable odometer rollback services for fleet vehicles. We have 50+ vehicles that need mileage adjustments for resale purposes. Can provide certificates of authenticity and guarantee no detection by standard diagnostic tools. Payment upfront required. Bulk discounts available for orders over 20 vehicles. Contact via encrypted channels only. References from previous satisfied customers available upon request.",
+      "author": "fleet_services_pro",
+      "timestamp": "2024-01-20T14:45:00Z",
+      "forum_section": "services",
+      "ground_truth": {
+        "summary": "Suspicious post offering professional odometer rollback services for fleet vehicles with guaranteed undetectable results and bulk pricing.",
+        "keywords": ["odometer rollback", "fleet vehicles", "mileage adjustment", "resale", "diagnostic tools", "certificates"],
+        "topic": "odometer",
+        "suspicious_score": 5
+      }
+    },
+    {
+      "id": "post_003",
+      "title": "Digital odometer calibration after ECU replacement",
+      "content": "I replaced the ECU in my 2019 BMW X3 and now need to calibrate the digital odometer to match the actual mileage. The car has 67,850 miles but the new ECU shows 0. I have the original mileage documentation from the dealer. What's the proper procedure to sync the odometer with the actual mileage? Is this something I can do with an OBD scanner or do I need specialized BMW software?",
+      "author": "bmw_tech_guy",
+      "timestamp": "2024-01-25T11:20:00Z",
+      "forum_section": "technical_help",
+      "ground_truth": {
+        "summary": "User needs to calibrate digital odometer after ECU replacement in BMW X3, seeking proper procedure to sync actual mileage.",
+        "keywords": ["digital odometer", "calibration", "ECU replacement", "BMW X3", "mileage", "OBD scanner"],
+        "topic": "odometer",
+        "suspicious_score": 2
+      }
+    },
+    {
+      "id": "post_004",
+      "title": "Odometer not advancing while driving",
+      "content": "Strange issue with my 2020 Toyota Camry - the odometer stopped advancing while I'm driving. I've put about 200 miles on the car this week but the odometer reading hasn't changed at all. The speedometer works fine and shows accurate speed. Trip meter also isn't advancing. Could this be a faulty instrument cluster or maybe a software glitch? Car is still under warranty so I want to understand the issue before taking it to the dealer.",
+      "author": "camry_driver_2020",
+      "timestamp": "2024-02-01T16:10:00Z",
+      "forum_section": "troubleshooting",
+      "ground_truth": {
+        "summary": "User's Toyota Camry odometer stopped advancing despite normal speedometer function, seeking diagnosis before warranty service.",
+        "keywords": ["odometer", "not advancing", "Toyota Camry", "speedometer", "trip meter", "instrument cluster"],
+        "topic": "odometer",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_005",
+      "title": "How to reset trip odometer on Honda Pilot",
+      "content": "Simple question - how do I reset the trip odometer on my 2021 Honda Pilot? I can't find the reset button and the manual isn't very clear. I've tried holding various buttons on the steering wheel and dashboard but nothing seems to work. Is there a specific sequence or do I need to access it through the infotainment system? Thanks in advance for any help!",
+      "author": "pilot_newbie",
+      "timestamp": "2024-02-05T13:45:00Z",
+      "forum_section": "how_to",
+      "ground_truth": {
+        "summary": "User asking for simple instructions on how to reset trip odometer in 2021 Honda Pilot, unable to find reset button.",
+        "keywords": ["trip odometer", "reset", "Honda Pilot", "reset button", "steering wheel", "infotainment"],
+        "topic": "odometer",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_006",
+      "title": "Programming new key fob for 2019 Ford F-150",
+      "content": "I lost my key fob and got a replacement from the dealer, but they want $300 to program it. Is there a way to program it myself? I have the original spare key and access to the truck. I've seen YouTube videos showing the door lock dance method but not sure if it works on 2019 F-150. Any step-by-step instructions would be greatly appreciated. The dealer seems overpriced for what should be a simple procedure.",
+      "author": "f150_owner",
+      "timestamp": "2024-01-18T10:15:00Z",
+      "forum_section": "diy_help",
+      "ground_truth": {
+        "summary": "User wants to program new Ford F-150 key fob themselves to avoid $300 dealer fee, seeking step-by-step instructions.",
+        "keywords": ["key fob", "programming", "Ford F-150", "replacement", "dealer", "door lock dance"],
+        "topic": "key programming",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_007",
+      "title": "URGENT: Key programming tools for sale - all makes/models",
+      "content": "Professional key programming equipment for sale. Can clone, program, and bypass any vehicle security system 2010-2024. Package includes VVDI2, Lonsdor K518ISE, and custom bypass modules. Perfect for locksmith business or automotive shop. Can program keys without owner consent or original keys. Instructions for defeating immobilizer systems included. Cash only, no questions asked. Moving sale - must go this week!",
+      "author": "locksmith_liquidation",
+      "timestamp": "2024-01-22T19:30:00Z",
+      "forum_section": "for_sale",
+      "ground_truth": {
+        "summary": "Suspicious post selling professional key programming tools claiming ability to bypass security and program without owner consent.",
+        "keywords": ["key programming", "clone", "bypass", "security system", "VVDI2", "immobilizer", "without consent"],
+        "topic": "key programming",
+        "suspicious_score": 4
+      }
+    },
+    {
+      "id": "post_008",
+      "title": "Lost all keys to 2020 Tesla Model 3 - options?",
+      "content": "Disaster struck - I lost both key cards for my Tesla Model 3 and my phone died (which had the Tesla app). The car is locked and I can't get in. I contacted Tesla service and they want to tow it to the service center and charge $500+ for new keys. Are there any independent locksmiths who can help with Tesla key programming? I have proof of ownership and registration. This seems like an expensive lesson in always having a backup!",
+      "author": "tesla_owner_disaster",
+      "timestamp": "2024-01-28T08:20:00Z",
+      "forum_section": "emergency_help",
+      "ground_truth": {
+        "summary": "Tesla Model 3 owner lost all keys and phone, seeking alternatives to expensive Tesla service center solution.",
+        "keywords": ["lost keys", "Tesla Model 3", "key cards", "Tesla app", "locksmith", "proof of ownership"],
+        "topic": "key programming",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_009",
+      "title": "Key programming after ECU swap in BMW",
+      "content": "I swapped the ECU in my 2017 BMW 330i with a used one from the same year/model. Now none of my keys work and the car won't start. I understand I need to program the keys to the new ECU. Do I need to take this to a BMW dealer or can an independent shop with the right software handle this? What's the typical cost for BMW key programming after an ECU swap? The car recognizes the keys but just won't start.",
+      "author": "bmw_diy_mechanic",
+      "timestamp": "2024-02-03T15:40:00Z",
+      "forum_section": "technical_help",
+      "ground_truth": {
+        "summary": "User needs key programming after ECU swap in BMW 330i, car recognizes keys but won't start, seeking service options.",
+        "keywords": ["key programming", "ECU swap", "BMW 330i", "keys won't work", "dealer", "independent shop"],
+        "topic": "key programming",
+        "suspicious_score": 2
+      }
+    },
+    {
+      "id": "post_010",
+      "title": "Programming Honda Civic key fob - step by step",
+      "content": "Successfully programmed a new key fob for my 2018 Honda Civic today! For anyone interested, here's the process: 1) Get in car with all existing keys, 2) Turn ignition to ON position (don't start), 3) Press and hold LOCK and UNLOCK buttons on original remote for 1 second, 4) Turn ignition to OFF, 5) Repeat step 3 two more times, 6) Turn ignition back to ON, 7) Press LOCK and UNLOCK on new remote within 10 seconds. Car should beep to confirm. Hope this helps others save the dealer programming fee!",
+      "author": "honda_civic_helper",
+      "timestamp": "2024-02-08T12:00:00Z",
+      "forum_section": "how_to_guides",
+      "ground_truth": {
+        "summary": "Detailed step-by-step instructions for programming Honda Civic key fob, sharing successful DIY process to avoid dealer fees.",
+        "keywords": ["Honda Civic", "key fob", "programming", "step by step", "ignition", "LOCK UNLOCK buttons"],
+        "topic": "key programming",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_011",
+      "title": "Service activation for heated seats in BMW",
+      "content": "I bought a used 2020 BMW X5 that has heated seats hardware installed but the feature isn't activated in the system. The previous owner said BMW charges $300 to activate this feature remotely. Is there a way to activate heated seats without going through BMW? I've heard about coding tools that can enable factory features. Has anyone successfully activated heated seats on their BMW? What tools are needed and is it worth the risk?",
+      "author": "bmw_x5_buyer",
+      "timestamp": "2024-01-16T14:20:00Z",
+      "forum_section": "modifications",
+      "ground_truth": {
+        "summary": "User wants to activate heated seats feature in BMW X5 without paying BMW's $300 fee, seeking coding tools and methods.",
+        "keywords": ["service activation", "heated seats", "BMW X5", "coding tools", "factory features", "remote activation"],
+        "topic": "service activation",
+        "suspicious_score": 2
+      }
+    },
+    {
+      "id": "post_012",
+      "title": "VCDS service activation for VAG vehicles - professional service",
+      "content": "Offering professional VCDS coding and service activation for all VAG group vehicles (VW, Audi, Skoda, Seat). Can activate: DRL, needle sweep, digital speedometer, convenience features, and much more. Located in downtown area, reasonable prices. All work comes with guarantee. I use genuine VCDS cable and have years of experience. Contact me for quote on your specific vehicle and desired features. References available from satisfied customers.",
+      "author": "vcds_professional",
+      "timestamp": "2024-01-24T11:30:00Z",
+      "forum_section": "services_offered",
+      "ground_truth": {
+        "summary": "Professional offering legitimate VCDS coding services for VAG vehicles to activate various convenience features with guarantee.",
+        "keywords": ["VCDS", "service activation", "VAG vehicles", "coding", "DRL", "convenience features", "professional"],
+        "topic": "service activation",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_013",
+      "title": "Tesla service activation bypass - all features unlocked",
+      "content": "Selling pre-configured Tesla modules that bypass service activation restrictions. Unlock ALL premium features including FSD, performance boost, heated seats, premium connectivity - everything Tesla charges thousands for. Installation takes 10 minutes, completely undetectable by Tesla diagnostics. Money back guarantee if Tesla discovers modification. Package includes full instructions and bypass modules for Model S, 3, X, Y. Limited time offer - act fast!",
+      "author": "tesla_unlock_master",
+      "timestamp": "2024-01-30T20:15:00Z",
+      "forum_section": "for_sale",
+      "ground_truth": {
+        "summary": "Highly suspicious post selling Tesla bypass modules to illegally unlock paid features, claiming undetectable modifications.",
+        "keywords": ["Tesla", "service activation", "bypass", "FSD", "premium features", "undetectable", "bypass modules"],
+        "topic": "service activation",
+        "suspicious_score": 5
+      }
+    },
+    {
+      "id": "post_014",
+      "title": "Mercedes command system activation after retrofit",
+      "content": "I retrofitted a Command navigation system in my 2019 Mercedes C300 that originally came with basic audio. The hardware is installed and working but I need to activate the navigation features in the software. Mercedes dealer wants $800 for activation which seems excessive. Are there independent shops that can perform Mercedes service activation? What coding tool is needed for Mercedes vehicles? Any recommendations for reliable service providers?",
+      "author": "mercedes_retrofit_guy",
+      "timestamp": "2024-02-06T09:45:00Z",
+      "forum_section": "retrofit_help",
+      "ground_truth": {
+        "summary": "User retrofitted Mercedes navigation system, needs software activation to enable features, seeking alternatives to expensive dealer service.",
+        "keywords": ["Mercedes", "Command system", "navigation", "retrofit", "service activation", "coding tool"],
+        "topic": "service activation",
+        "suspicious_score": 2
+      }
+    },
+    {
+      "id": "post_015",
+      "title": "Audi virtual cockpit activation guide",
+      "content": "For those interested in activating virtual cockpit on pre-facelift Audi A4/A5, here's what you need: Compatible instrument cluster (part number 8W5920791), VCDS or OBD Eleven coding tool, and correct coding sequence. The hardware swap is straightforward but coding requires specific adaptations in multiple modules. Total cost around $800 for used cluster plus coding. Much cheaper than Audi's retrofit package. Happy to share coding instructions if anyone is interested in this modification.",
+      "author": "audi_coding_expert",
+      "timestamp": "2024-02-10T16:30:00Z",
+      "forum_section": "modification_guides",
+      "ground_truth": {
+        "summary": "Detailed guide for activating Audi virtual cockpit through hardware and software modifications, sharing legitimate retrofit process.",
+        "keywords": ["Audi", "virtual cockpit", "activation", "instrument cluster", "VCDS", "coding", "modification"],
+        "topic": "service activation",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_016",
+      "title": "Immobilizer issue after engine swap",
+      "content": "I swapped a 2.0T engine into my 2016 VW Golf from a donor car. Everything is connected but the car won't start due to immobilizer. The engine ECU is from the donor vehicle and doesn't recognize my key. Do I need to swap the ECU from my original engine or can the immobilizer be programmed to accept the donor ECU? What's the proper procedure for immobilizer reset after engine swap? Local VW dealer said they can't help with swapped engines.",
+      "author": "vw_engine_swapper",
+      "timestamp": "2024-01-17T13:25:00Z",
+      "forum_section": "engine_swaps",
+      "ground_truth": {
+        "summary": "User has immobilizer issues after VW Golf engine swap, donor ECU doesn't recognize original key, seeking programming solution.",
+        "keywords": ["immobilizer", "engine swap", "VW Golf", "ECU", "key recognition", "programming", "donor vehicle"],
+        "topic": "immobilizer",
+        "suspicious_score": 2
+      }
+    },
+    {
+      "id": "post_017",
+      "title": "PROFESSIONAL IMMOBILIZER BYPASS - GUARANTEED SUCCESS",
+      "content": "COMPLETE IMMOBILIZER BYPASS SERVICE FOR ALL VEHICLES 1995-2025. NO KEYS NEEDED! PERMANENT DISABLE - NEVER WORRY ABOUT LOST KEYS AGAIN. WE CAN BYPASS: Toyota, Honda, BMW, Mercedes, Audi, Volkswagen, Ford, Chevrolet, Nissan, and more. Service includes complete removal of immobilizer function and starter lockout. $500 flat rate, 100% success guarantee. CASH ONLY - NO PAPERWORK REQUIRED. Vehicle pickup available. CALL NOW!",
+      "author": "bypass_specialists",
+      "timestamp": "2024-01-26T22:45:00Z",
+      "forum_section": "services",
+      "ground_truth": {
+        "summary": "Extremely suspicious post offering illegal immobilizer bypass services with no keys or paperwork required, advertising criminal services.",
+        "keywords": ["immobilizer bypass", "no keys needed", "permanent disable", "no paperwork", "cash only", "all vehicles"],
+        "topic": "immobilizer",
+        "suspicious_score": 5
+      }
+    },
+    {
+      "id": "post_018",
+      "title": "Immobilizer light flashing - car won't start",
+      "content": "My 2018 Honda Accord won't start and there's a flashing immobilizer light on the dashboard. This started happening yesterday - I was driving fine, parked at the store, and when I came back the car wouldn't start. The engine cranks but won't fire. Key fob battery is good and all other electrical systems work. Is this a common Honda issue? Could it be a faulty immobilizer module or maybe the key lost its programming? Car has 45k miles and has been reliable until now.",
+      "author": "accord_owner_2018",
+      "timestamp": "2024-02-02T07:30:00Z",
+      "forum_section": "troubleshooting",
+      "ground_truth": {
+        "summary": "Honda Accord owner experiencing sudden immobilizer failure, car cranks but won't start with flashing immobilizer light.",
+        "keywords": ["immobilizer", "flashing light", "Honda Accord", "won't start", "cranks", "key programming"],
+        "topic": "immobilizer",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_019",
+      "title": "BMW immobilizer programming after key replacement",
+      "content": "I need to program a new key for my 2019 BMW 540i after losing the original. BMW dealer provided new key but said immobilizer programming requires additional service. They want $450 total for key + programming. The key is cut correctly but car doesn't recognize it yet. Can independent BMW specialists do immobilizer programming or is this dealer-only? Are there mobile services that can program BMW immobilizers? The dealer wait time is 3 weeks which is too long.",
+      "author": "bmw_540i_owner",
+      "timestamp": "2024-02-07T14:10:00Z",
+      "forum_section": "key_help",
+      "ground_truth": {
+        "summary": "BMW owner needs immobilizer programming for new key, seeking faster and cheaper alternatives to dealer service.",
+        "keywords": ["BMW", "immobilizer programming", "new key", "dealer", "independent", "mobile service"],
+        "topic": "immobilizer",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_020",
+      "title": "Immobilizer bypass for track car conversion",
+      "content": "Converting my 2015 Subaru WRX to a dedicated track car and want to remove the immobilizer system for reliability. Since it will never be street driven again, the security aspect isn't needed. What's the cleanest way to bypass the immobilizer in the ECU? I have access to tuning software and am comfortable with ECU modifications. Goal is to eliminate any potential immobilizer-related failures during track sessions. Any tuners have experience with permanent immobilizer removal?",
+      "author": "track_day_subaru",
+      "timestamp": "2024-02-12T18:20:00Z",
+      "forum_section": "track_builds",
+      "ground_truth": {
+        "summary": "User wants to remove immobilizer from track-only Subaru WRX for reliability, seeking legitimate tuning solution for race car.",
+        "keywords": ["immobilizer bypass", "track car", "Subaru WRX", "ECU modification", "tuning", "race car"],
+        "topic": "immobilizer",
+        "suspicious_score": 2
+      }
+    },
+    {
+      "id": "post_021",
+      "title": "ECU tune recommendations for 2020 Civic Si",
+      "content": "Looking for ECU tune recommendations for my 2020 Civic Si. Car is stock except for cold air intake and exhaust. Interested in a conservative tune that improves power delivery without sacrificing reliability. I've heard good things about Hondata FlashPro and KTuner. Which tuning platform do you recommend and what kind of power gains can I expect? Also considering ethanol tune in the future. Car has 25k miles and still under powertrain warranty until next year.",
+      "author": "civic_si_enthusiast",
+      "timestamp": "2024-01-19T16:40:00Z",
+      "forum_section": "tuning",
+      "ground_truth": {
+        "summary": "User seeking conservative ECU tune recommendations for Civic Si with basic mods, considering warranty and reliability.",
+        "keywords": ["ECU tune", "Civic Si", "Hondata FlashPro", "KTuner", "power gains", "ethanol tune", "warranty"],
+        "topic": "engine tuning",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_022",
+      "title": "Stage 2 tune results - before/after dyno",
+      "content": "Just finished Stage 2 tune on my 2019 Golf R and wanted to share results! Mods: turbo-back exhaust, high-flow downpipe, cold air intake, intercooler upgrade. Tune by APR. Before: 292hp/280tq. After: 378hp/365tq. Gained 86hp and 85tq! Car feels completely different - much more responsive and linear power delivery. No knock detected during dyno runs. Next step is methanol injection for Stage 3. Total investment around $4500 including tune. Worth every penny for daily driving enjoyment.",
+      "author": "golf_r_tuned",
+      "timestamp": "2024-01-27T12:50:00Z",
+      "forum_section": "dyno_results",
+      "ground_truth": {
+        "summary": "User shares successful Stage 2 Golf R tune results with significant power gains, detailing modifications and dyno numbers.",
+        "keywords": ["Stage 2 tune", "Golf R", "dyno results", "APR", "turbo-back exhaust", "power gains", "methanol injection"],
+        "topic": "engine tuning",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_023",
+      "title": "STOLEN ECU PROGRAMMING - QUICK TURNAROUND",
+      "content": "Programming service for ECUs with questionable origins. No questions asked about how you obtained the ECU. Can remove VIN locks, security features, and ownership history. Specializing in high-performance German vehicles. Fast turnaround - usually same day service. Bring ECU only, no other documentation needed. Payment in crypto preferred for privacy. Located in industrial area, discrete entrance. Contact via encrypted messaging only. References from underground racing community.",
+      "author": "underground_ecu_pro",
+      "timestamp": "2024-02-04T23:15:00Z",
+      "forum_section": "services",
+      "ground_truth": {
+        "summary": "Highly suspicious post offering ECU programming for stolen units, explicitly stating no questions asked and removing security features.",
+        "keywords": ["stolen ECU", "no questions", "remove VIN locks", "questionable origins", "crypto payment", "underground"],
+        "topic": "engine tuning",
+        "suspicious_score": 5
+      }
+    },
+    {
+      "id": "post_024",
+      "title": "E85 conversion tune for BMW N55 engine",
+      "content": "Planning E85 conversion on my 2016 BMW 340i with N55 engine. Car currently has downpipe, intake, and intercooler. What additional mods are needed for reliable E85 tune? I'm considering upgraded fuel injectors and high-pressure fuel pump. Which tuning shops have good experience with N55 E85 tunes? Expected power increase from E85 vs 93 octane? Also concerned about fuel system longevity with ethanol - any long-term issues to consider?",
+      "author": "bmw_340i_tuner",
+      "timestamp": "2024-02-09T10:25:00Z",
+      "forum_section": "fuel_systems",
+      "ground_truth": {
+        "summary": "User planning E85 conversion for BMW N55 engine, seeking advice on required modifications and tuning considerations.",
+        "keywords": ["E85 conversion", "BMW N55", "fuel injectors", "high-pressure pump", "ethanol", "power increase"],
+        "topic": "engine tuning",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_025",
+      "title": "Turbo upgrade and tune package deal",
+      "content": "Selling complete turbo upgrade package for 2015-2021 WRX/STI. Includes Garrett GTX2867R turbo, 3-inch turbo-back exhaust, front-mount intercooler, boost controller, and ECU tune file. Everything needed for reliable 400+hp setup. Turbo has 5k miles, excellent condition. Original owner, all receipts included. Asking $4800 for complete package, will not separate. Tuned by ProTuning Solutions, dyno sheet included. Reason for sale: going built motor route. Serious inquiries only.",
+      "author": "wrx_seller_serious",
+      "timestamp": "2024-02-13T15:55:00Z",
+      "forum_section": "parts_for_sale",
+      "ground_truth": {
+        "summary": "Legitimate sale of complete WRX turbo upgrade package with professional tune, well-documented with receipts and dyno results.",
+        "keywords": ["turbo upgrade", "WRX STI", "Garrett GTX2867R", "ECU tune", "400hp", "ProTuning", "dyno sheet"],
+        "topic": "engine tuning",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_026",
+      "title": "Help with trip computer reset",
+      "content": "Simple question about my 2022 Subaru Outback. How do I reset the average fuel economy reading on the trip computer? I can find how to reset trip A and trip B, but the average MPG just keeps calculating from when I bought the car. I want to reset it to see my fuel economy for just highway driving vs city driving. The manual mentions it but the instructions don't seem to work. Any Outback owners know the trick?",
+      "author": "outback_newbie",
+      "timestamp": "2024-01-21T11:15:00Z",
+      "forum_section": "how_to",
+      "ground_truth": {
+        "summary": "User asking for help resetting average fuel economy on Subaru Outback trip computer, manual instructions unclear.",
+        "keywords": ["trip computer", "reset", "Subaru Outback", "fuel economy", "average MPG", "trip A", "trip B"],
+        "topic": "odometer",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_027",
+      "title": "Mileage discrepancy after transmission swap",
+      "content": "I swapped the transmission in my 2017 Chevy Silverado and noticed something odd. The truck had 89,500 miles before the swap, but after installing the used transmission, the odometer now reads 89,485 miles. The transmission came from a truck with higher mileage (110k+), so I'm confused why my odometer reading would go backwards. Is this normal behavior or did something get crossed during the installation? All electrical connections were properly transferred.",
+      "author": "silverado_mechanic",
+      "timestamp": "2024-01-29T14:30:00Z",
+      "forum_section": "transmission_help",
+      "ground_truth": {
+        "summary": "User experiencing odometer reading decrease after transmission swap in Silverado, confused about 15-mile backward change.",
+        "keywords": ["mileage discrepancy", "transmission swap", "Chevy Silverado", "odometer", "electrical connections"],
+        "topic": "odometer",
+        "suspicious_score": 2
+      }
+    },
+    {
+      "id": "post_028",
+      "title": "Digital cluster swap and mileage sync",
+      "content": "I'm upgrading from analog to digital instrument cluster in my 2018 F-150. The digital cluster came from a higher mileage truck (75k vs my 52k). After installation, will my truck show the correct 52k miles or will it display the 75k from the donor cluster? Is there a way to program the correct mileage into the digital cluster? I have all documentation proving my truck's actual mileage. Don't want to accidentally increase my truck's recorded mileage.",
+      "author": "f150_cluster_upgrade",
+      "timestamp": "2024-02-11T09:10:00Z",
+      "forum_section": "modifications",
+      "ground_truth": {
+        "summary": "User upgrading to digital cluster in F-150, concerned about mileage sync and wants to maintain correct lower mileage reading.",
+        "keywords": ["digital cluster", "instrument cluster", "F-150", "mileage sync", "documentation", "analog to digital"],
+        "topic": "odometer",
+        "suspicious_score": 2
+      }
+    },
+    {
+      "id": "post_029",
+      "title": "Speedometer calibration after tire size change",
+      "content": "I upgraded to larger wheels and tires on my 2019 Jeep Wrangler (went from 32\" to 35\" tires). Now my speedometer reads slower than actual speed and my odometer isn't tracking miles accurately. GPS shows I'm doing 65mph when speedometer shows 60mph. Is there a way to calibrate the speedometer for the new tire size? I heard some Jeeps have a tire size setting in the computer. What's the proper procedure to correct this?",
+      "author": "jeep_wrangler_modder",
+      "timestamp": "2024-02-14T16:45:00Z",
+      "forum_section": "tire_wheel_help",
+      "ground_truth": {
+        "summary": "User needs speedometer calibration after tire size change in Jeep Wrangler, GPS showing inaccurate readings vs speedometer.",
+        "keywords": ["speedometer calibration", "tire size", "Jeep Wrangler", "odometer", "GPS", "wheel upgrade"],
+        "topic": "odometer",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_030",
+      "title": "Cluster mileage correction service - legal only",
+      "content": "Offering instrument cluster mileage correction services for legitimate purposes only. Services include: mileage sync after cluster replacement, correction after ECU swap, and calibration after transmission work. Must provide vehicle title, service records, and documentation proving correct mileage. No rollback or fraud services provided. Work performed only on customer's own vehicle with proper ownership verification. Licensed automotive technician with 15+ years experience. References available from dealerships and repair shops.",
+      "author": "legitimate_cluster_tech",
+      "timestamp": "2024-02-15T13:20:00Z",
+      "forum_section": "professional_services",
+      "ground_truth": {
+        "summary": "Professional offering legitimate mileage correction services with proper documentation requirements and ownership verification.",
+        "keywords": ["cluster correction", "legitimate", "documentation", "ownership verification", "licensed technician", "no rollback"],
+        "topic": "odometer",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_031",
+      "title": "Key cutting for vintage BMW E30",
+      "content": "I need a new key cut for my 1989 BMW E30. Lost my only key and the local locksmith says they don't have the right blank for this old BMW. The key has a specific BMW logo and unusual cut pattern. Are there specialty shops that can cut vintage BMW keys? I have the VIN and title to prove ownership. The car doesn't have an immobilizer system, so it's just a matter of getting the mechanical key cut correctly. Any recommendations for E30 key cutting services?",
+      "author": "e30_restoration_guy",
+      "timestamp": "2024-01-23T10:45:00Z",
+      "forum_section": "vintage_bmw",
+      "ground_truth": {
+        "summary": "Owner of vintage BMW E30 needs mechanical key cutting service, local locksmith lacks proper blank for classic BMW.",
+        "keywords": ["key cutting", "vintage BMW", "E30", "key blank", "mechanical key", "no immobilizer", "VIN"],
+        "topic": "key programming",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_032",
+      "title": "Clone key programming without original - FAST SERVICE",
+      "content": "Professional key cloning service - NO ORIGINAL REQUIRED! Can program keys for any vehicle without existing keys or owner presence. Specializing in luxury vehicles: BMW, Mercedes, Audi, Lexus, Porsche. Service performed at your location or our discrete facility. Perfect for repo agents, fleet managers, and 'urgent situations'. Payment in cash only, no documentation required. Can defeat any immobilizer system. 24/7 emergency service available. Results guaranteed or money back!",
+      "author": "key_clone_express",
+      "timestamp": "2024-01-31T21:30:00Z",
+      "forum_section": "services",
+      "ground_truth": {
+        "summary": "Extremely suspicious key cloning service advertising no original keys or owner presence required, targeting repo agents and urgent situations.",
+        "keywords": ["clone key", "no original", "no owner", "repo agents", "discrete", "cash only", "defeat immobilizer"],
+        "topic": "key programming",
+        "suspicious_score": 5
+      }
+    },
+    {
+      "id": "post_033",
+      "title": "Smart key programming for 2021 Lexus RX",
+      "content": "My 2021 Lexus RX smart key stopped working after I dropped it. The key still opens the car with the mechanical key inside, but the push-button start doesn't recognize it. I tested the key fob battery and it's fine. Local Lexus dealer wants $400 to reprogram the smart key system. Is this a common issue with Lexus smart keys? Are there independent shops that can reprogram Lexus smart keys for less? The car still has the second smart key that works perfectly.",
+      "author": "lexus_rx_owner",
+      "timestamp": "2024-02-05T12:35:00Z",
+      "forum_section": "lexus_help",
+      "ground_truth": {
+        "summary": "Lexus RX owner's smart key stopped working after being dropped, push-button start doesn't recognize it, seeking repair options.",
+        "keywords": ["smart key", "Lexus RX", "push-button start", "dropped", "reprogram", "independent shop"],
+        "topic": "key programming",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_034",
+      "title": "Programming additional key for Ford Transit van",
+      "content": "I bought a used 2020 Ford Transit van for my business and it only came with one key. I want to program a second key for backup purposes. Ford dealer quoted $250 for a new key plus programming. I've seen blank Transit keys online for much less. Can I buy a blank key and have it programmed independently? What type of programming equipment is needed for Ford Transit keys? The van has intelligent access system with push-button start.",
+      "author": "transit_fleet_owner",
+      "timestamp": "2024-02-08T15:10:00Z",
+      "forum_section": "commercial_vehicles",
+      "ground_truth": {
+        "summary": "Business owner wants to program second key for Ford Transit van, seeking cheaper alternative to dealer programming.",
+        "keywords": ["Ford Transit", "additional key", "programming", "business", "intelligent access", "push-button start"],
+        "topic": "key programming",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_035",
+      "title": "Mercedes key programming after battery replacement",
+      "content": "After replacing the battery in my 2018 Mercedes C300, the car doesn't recognize my key fob. The key still unlocks the doors but the engine won't start - it says 'key not detected' on the dashboard. I tried the backup method of placing the key fob near the start button but that doesn't work either. Do Mercedes keys lose their programming when the car battery dies? Is this something that requires dealer reprogramming or can it be reset somehow? This is my only key so I'm stuck.",
+      "author": "mercedes_c300_stuck",
+      "timestamp": "2024-02-12T08:50:00Z",
+      "forum_section": "mercedes_help",
+      "ground_truth": {
+        "summary": "Mercedes C300 won't recognize key fob after battery replacement, key unlocks doors but engine won't start showing key not detected.",
+        "keywords": ["Mercedes C300", "key not detected", "battery replacement", "key fob", "start button", "reprogramming"],
+        "topic": "key programming",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_036",
+      "title": "Adaptive headlight activation on Audi A6",
+      "content": "My 2020 Audi A6 has the hardware for adaptive headlights but the feature isn't activated. I can see the stepper motors and sensors in the headlight housing, but the lights don't turn with steering input. Dealer says it's a $800 retrofit to activate this feature. I've been reading about VCDS coding to enable adaptive headlights. Has anyone successfully activated this feature on A6? What modules need to be coded and are there any safety concerns with DIY activation?",
+      "author": "audi_a6_coder",
+      "timestamp": "2024-01-20T17:25:00Z",
+      "forum_section": "audi_coding",
+      "ground_truth": {
+        "summary": "Audi A6 owner wants to activate adaptive headlights using VCDS coding instead of paying dealer's $800 retrofit fee.",
+        "keywords": ["adaptive headlights", "Audi A6", "VCDS coding", "stepper motors", "retrofit", "modules"],
+        "topic": "service activation",
+        "suspicious_score": 2
+      }
+    },
+    {
+      "id": "post_037",
+      "title": "BMW digital services unlock - all features enabled",
+      "content": "Offering BMW digital services unlock for all models 2018+. Can activate: Apple CarPlay, wireless charging, gesture control, massaging seats, Harman Kardon sound, BMW Live Cockpit Pro, and more. Service performed remotely via VIN - no visit required. All features permanently unlocked, undetectable by BMW servers. One-time payment unlocks everything BMW charges monthly subscriptions for. 100% safe, thousands of satisfied customers. Payment via Bitcoin only for security. Contact for instant activation!",
+      "author": "bmw_digital_unlock",
+      "timestamp": "2024-01-26T19:40:00Z",
+      "forum_section": "services",
+      "ground_truth": {
+        "summary": "Suspicious service offering illegal BMW digital feature unlocks remotely via VIN, claiming to bypass BMW's subscription model permanently.",
+        "keywords": ["BMW digital services", "remote unlock", "undetectable", "subscription bypass", "Bitcoin payment", "VIN activation"],
+        "topic": "service activation",
+        "suspicious_score": 4
+      }
+    },
+    {
+      "id": "post_038",
+      "title": "Factory navigation activation in Honda Pilot",
+      "content": "I have a 2019 Honda Pilot EX-L that came with the 8-inch display but no navigation. I found out that Honda uses the same hardware for models with and without navigation - it's just a software lock. Has anyone successfully activated the navigation feature on a Pilot? What tools are needed for Honda service activation? I've heard about Honda Programming Device (HPD) but not sure if it works on 2019 models. Dealer wants $1200 for navigation retrofit which seems excessive.",
+      "author": "pilot_navigation_seeker",
+      "timestamp": "2024-02-01T14:15:00Z",
+      "forum_section": "honda_modifications",
+      "ground_truth": {
+        "summary": "Honda Pilot owner wants to activate navigation feature using software unlock instead of expensive dealer retrofit option.",
+        "keywords": ["factory navigation", "Honda Pilot", "software lock", "HPD", "navigation retrofit", "service activation"],
+        "topic": "service activation",
+        "suspicious_score": 2
+      }
+    },
+    {
+      "id": "post_039",
+      "title": "Porsche PCM coding for European features",
+      "content": "I imported a 2020 Porsche 911 from Europe and want to activate some features that were disabled for US market. Specifically looking to enable: speed limit sign recognition, lane change assist, and traffic jam assist. The hardware is present but features are region-locked in software. What Porsche coding tools can activate these features? Is this legal to do on an imported vehicle? I have all import documentation and the car passed DOT inspection.",
+      "author": "porsche_import_owner",
+      "timestamp": "2024-02-07T11:40:00Z",
+      "forum_section": "porsche_technical",
+      "ground_truth": {
+        "summary": "Owner of imported Porsche 911 wants to activate European features disabled for US market, seeking coding solutions.",
+        "keywords": ["Porsche PCM", "European features", "region-locked", "speed limit recognition", "imported", "DOT"],
+        "topic": "service activation",
+        "suspicious_score": 2
+      }
+    },
+    {
+      "id": "post_040",
+      "title": "Tesla supercharging activation guide",
+      "content": "For Tesla owners who bought cars without unlimited supercharging, here's how to check if your vehicle is eligible for free activation. Tesla occasionally runs promotions where they activate supercharging for certain VINs. Method: Log into your Tesla account, go to 'Manage' > 'View Details' > 'Upgrades'. If you see a $0 supercharging upgrade option, you can activate it for free! This is a legitimate Tesla promotion, not a hack. I activated mine last week using this method. Screenshot attached showing the process.",
+      "author": "tesla_supercharging_tips",
+      "timestamp": "2024-02-10T13:55:00Z",
+      "forum_section": "tesla_tips",
+      "ground_truth": {
+        "summary": "Tesla owner sharing legitimate method to check for free supercharging activation through official Tesla account promotions.",
+        "keywords": ["Tesla", "supercharging activation", "legitimate", "Tesla account", "promotion", "VIN eligible"],
+        "topic": "service activation",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_041",
+      "title": "Immobilizer fault after aftermarket alarm install",
+      "content": "I had an aftermarket alarm system installed in my 2017 Nissan Altima and now I'm having immobilizer issues. Sometimes the car starts normally, other times it cranks but won't fire and the security light stays on. The alarm installer says it's not related to their work, but the problems started right after installation. Could the aftermarket alarm be interfering with the factory immobilizer? What should I check to diagnose this intermittent issue?",
+      "author": "altima_alarm_trouble",
+      "timestamp": "2024-01-22T09:20:00Z",
+      "forum_section": "alarm_systems",
+      "ground_truth": {
+        "summary": "User experiencing intermittent immobilizer issues after aftermarket alarm installation in Nissan Altima, seeking diagnosis help.",
+        "keywords": ["immobilizer fault", "aftermarket alarm", "Nissan Altima", "security light", "intermittent", "interference"],
+        "topic": "immobilizer",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_042",
+      "title": "EMERGENCY IMMOBILIZER BYPASS - 24/7 ROADSIDE",
+      "content": "LOCKED OUT? IMMOBILIZER PROBLEMS? WE CAN HELP! 24/7 emergency immobilizer bypass service. NO QUESTIONS ASKED about ownership or documentation. Fast response time - usually 30 minutes. Can bypass any immobilizer system permanently or temporarily. Perfect for emergency situations, repo work, or when you've lost all keys. Service includes starter relay bypass and ECU reprogramming. CASH PAYMENT ONLY. Discrete service, no paperwork trail. Call our emergency hotline now!",
+      "author": "emergency_bypass_24_7",
+      "timestamp": "2024-01-28T03:15:00Z",
+      "forum_section": "emergency_services",
+      "ground_truth": {
+        "summary": "Highly suspicious 24/7 immobilizer bypass service advertising no questions asked, repo work, and no paperwork trail.",
+        "keywords": ["emergency bypass", "no questions", "repo work", "no documentation", "cash only", "discrete", "24/7"],
+        "topic": "immobilizer",
+        "suspicious_score": 5
+      }
+    },
+    {
+      "id": "post_043",
+      "title": "Immobilizer reset after ECU reflash",
+      "content": "I had my 2018 Volkswagen GTI ECU reflashed with a Stage 1 tune and now the immobilizer isn't working properly. The car starts but sometimes shows immobilizer warning messages on the dash. The tuning shop says this can happen after ECU modifications and that the immobilizer needs to be 'reset' or 'relearned'. What's the correct procedure for immobilizer reset after ECU tuning? Is this something I can do myself or does it require dealer equipment?",
+      "author": "gti_stage1_owner",
+      "timestamp": "2024-02-03T16:30:00Z",
+      "forum_section": "vw_tuning",
+      "ground_truth": {
+        "summary": "GTI owner experiencing immobilizer warnings after ECU tune, seeking reset procedure to resolve warning messages.",
+        "keywords": ["immobilizer reset", "ECU reflash", "Volkswagen GTI", "Stage 1 tune", "warning messages", "relearned"],
+        "topic": "immobilizer",
+        "suspicious_score": 2
+      }
+    },
+    {
+      "id": "post_044",
+      "title": "Immobilizer module replacement in Mercedes",
+      "content": "My 2019 Mercedes E350 needs a new immobilizer module according to the dealer. The car sometimes won't start and shows 'Remove key and try again' message. Dealer quoted $1200 for new immobilizer module plus programming. The part alone costs $400 online. Can I install the immobilizer module myself or does it require special Mercedes programming? Are there independent shops that can program Mercedes immobilizer modules? This seems like an expensive repair for a 5-year-old car.",
+      "author": "mercedes_e350_repair",
+      "timestamp": "2024-02-06T10:25:00Z",
+      "forum_section": "mercedes_repairs",
+      "ground_truth": {
+        "summary": "Mercedes E350 owner needs immobilizer module replacement, seeking alternatives to expensive dealer service and programming.",
+        "keywords": ["immobilizer module", "Mercedes E350", "replacement", "programming", "remove key", "independent"],
+        "topic": "immobilizer",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_045",
+      "title": "Jeep immobilizer bypass for off-road build",
+      "content": "Building a dedicated off-road Jeep Wrangler and want to eliminate the immobilizer system for simplicity. This will be a trail-only vehicle with a roll cage, racing harnesses, and full safety equipment. The immobilizer adds unnecessary complexity for a vehicle that will never be street legal again. What's the cleanest way to bypass the immobilizer in a 2016 JK Wrangler? I'm comfortable with wiring modifications and have full electrical schematics for the vehicle.",
+      "author": "jeep_trail_builder",
+      "timestamp": "2024-02-09T14:45:00Z",
+      "forum_section": "jeep_builds",
+      "ground_truth": {
+        "summary": "User building dedicated off-road Jeep wants to bypass immobilizer for trail-only vehicle with safety equipment and roll cage.",
+        "keywords": ["immobilizer bypass", "Jeep Wrangler", "off-road", "trail-only", "roll cage", "wiring modifications"],
+        "topic": "immobilizer",
+        "suspicious_score": 2
+      }
+    },
+    {
+      "id": "post_046",
+      "title": "Dyno tuning for turbocharged Miata",
+      "content": "Getting my turbocharged 2016 Miata dyno tuned next week and looking for advice. Setup includes: Garrett GT2554R turbo, 550cc injectors, Walbro 255 fuel pump, intercooler, and 3-inch exhaust. Running on MegaSquirt PNP ECU. Target is around 250-280hp on pump gas with safe AFRs. Any Miata turbo owners have experience with MegaSquirt tuning? What boost levels are safe for the stock internals? Planning to start conservative and work up gradually.",
+      "author": "miata_turbo_project",
+      "timestamp": "2024-01-24T13:40:00Z",
+      "forum_section": "miata_forced_induction",
+      "ground_truth": {
+        "summary": "User preparing for dyno tune on turbocharged Miata, seeking advice on safe power levels and MegaSquirt tuning experience.",
+        "keywords": ["dyno tuning", "turbocharged Miata", "Garrett GT2554R", "MegaSquirt", "250hp", "safe AFRs"],
+        "topic": "engine tuning",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_047",
+      "title": "ECU swap and tune from crashed vehicle",
+      "content": "I found a crashed 2018 Focus RS at a salvage yard and I'm considering buying the ECU for my 2017 Focus RS. The crashed car had a Stage 2 tune with supporting mods. My car is currently stock. If I swap ECUs, will the tune work on my engine or do tunes need to be vehicle-specific? Are there legal concerns about using an ECU from a salvage vehicle? The VIN would be different between the ECUs. What precautions should I take before attempting this swap?",
+      "author": "focus_rs_salvage_hunter",
+      "timestamp": "2024-01-30T12:10:00Z",
+      "forum_section": "focus_rs_technical",
+      "ground_truth": {
+        "summary": "User considering ECU swap from crashed Focus RS to get Stage 2 tune, questioning compatibility and legal concerns.",
+        "keywords": ["ECU swap", "Focus RS", "crashed vehicle", "Stage 2 tune", "salvage yard", "VIN different"],
+        "topic": "engine tuning",
+        "suspicious_score": 3
+      }
+    },
+    {
+      "id": "post_048",
+      "title": "PERFORMANCE ECU FLASHING - NO VIN MATCHING REQUIRED",
+      "content": "Professional ECU flashing service for all European performance cars. NO VIN MATCHING OR OWNERSHIP VERIFICATION REQUIRED. Specializing in Stage 2-3 tunes for BMW, Audi, Mercedes, Porsche. Can also remove DTC codes, emissions systems, and speed limiters. Same-day service, remote flashing available for most models. ECUs don't need to match your vehicle - we can adapt any compatible ECU. Perfect for track cars, racing applications, or 'special projects'. Crypto payments accepted.",
+      "author": "euro_ecu_flash_pro",
+      "timestamp": "2024-02-02T20:55:00Z",
+      "forum_section": "tuning_services",
+      "ground_truth": {
+        "summary": "Suspicious ECU flashing service advertising no VIN matching or ownership verification, mentioning special projects and crypto payment.",
+        "keywords": ["ECU flashing", "no VIN matching", "no ownership", "remove DTC", "special projects", "crypto payments"],
+        "topic": "engine tuning",
+        "suspicious_score": 4
+      }
+    },
+    {
+      "id": "post_049",
+      "title": "Cobb Accessport tune for WRX - first timer advice",
+      "content": "Just bought a Cobb Accessport for my 2020 WRX and this is my first time tuning. Car is completely stock except for a cold air intake. Should I start with the Stage 1 map or get a custom tune right away? I've heard mixed opinions about off-the-shelf maps vs custom tunes for reliability. What data logs should I monitor during the first few drives? Also considering an exhaust upgrade - should I wait and do everything at once or tune incrementally?",
+      "author": "wrx_tuning_newbie",
+      "timestamp": "2024-02-05T15:20:00Z",
+      "forum_section": "subaru_tuning",
+      "ground_truth": {
+        "summary": "First-time WRX tuner asking for advice on Cobb Accessport maps, tuning approach, and modification timing for stock car.",
+        "keywords": ["Cobb Accessport", "WRX", "Stage 1 map", "custom tune", "data logs", "first time tuning"],
+        "topic": "engine tuning",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_050",
+      "title": "Ethanol content sensor install and tune",
+      "content": "Installing ethanol content sensor in my 2019 Mustang GT to run flex fuel setup. Already have 47lb injectors, upgraded fuel pump, and cold air intake. Planning to tune for both E85 and 93 octane with automatic switching based on ethanol content. What's the best location for the ethanol sensor in the fuel system? Any recommendations for tuners experienced with Mustang flex fuel setups? Expected power difference between E85 and pump gas on a stock motor?",
+      "author": "mustang_flex_fuel_build",
+      "timestamp": "2024-02-11T11:35:00Z",
+      "forum_section": "mustang_fuel_systems",
+      "ground_truth": {
+        "summary": "Mustang GT owner installing ethanol content sensor for flex fuel setup, seeking installation advice and tuning recommendations.",
+        "keywords": ["ethanol content sensor", "Mustang GT", "flex fuel", "E85", "automatic switching", "fuel system"],
+        "topic": "engine tuning",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_051",
+      "title": "Digital dash install and configuration",
+      "content": "Installing AiM MXS Strada dash in my track-focused E46 M3. Need help with CAN bus integration for engine parameters. Want to display: RPM, oil pressure, oil temp, water temp, fuel level, and gear position. The BMW CAN protocol seems different from newer cars. Has anyone successfully integrated an aftermarket digital dash with E46 CAN bus? What additional sensors might be needed for oil pressure and temperature monitoring? Planning to remove the stock cluster completely.",
+      "author": "e46_track_build",
+      "timestamp": "2024-01-25T16:50:00Z",
+      "forum_section": "bmw_e46_builds",
+      "ground_truth": {
+        "summary": "User installing AiM digital dash in track E46 M3, seeking CAN bus integration help and sensor requirements for engine monitoring.",
+        "keywords": ["digital dash", "AiM MXS", "E46 M3", "CAN bus", "oil pressure", "track car", "aftermarket"],
+        "topic": "service activation",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_052",
+      "title": "Anti-theft system bypass for project car",
+      "content": "Working on a 1995 Honda Civic project car that has an aftermarket alarm system from the 90s. The alarm brain is malfunctioning and preventing the car from starting. I can't find replacement parts for this ancient alarm system. What's the safest way to completely bypass or remove the anti-theft system? I have the wiring diagrams and can see where the alarm intercepted the starter and fuel pump circuits. This is a dedicated project car, not concerned about theft protection.",
+      "author": "civic_project_restoration",
+      "timestamp": "2024-01-27T14:25:00Z",
+      "forum_section": "honda_restoration",
+      "ground_truth": {
+        "summary": "Restoring 1995 Civic with malfunctioning aftermarket alarm preventing start, seeking safe bypass method for project car.",
+        "keywords": ["anti-theft bypass", "Honda Civic", "project car", "aftermarket alarm", "starter circuit", "restoration"],
+        "topic": "immobilizer",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_053",
+      "title": "Speed limiter removal for track use",
+      "content": "My 2020 BMW M3 has a 155mph speed limiter that I'd like removed for track day use. I regularly attend track events where speeds exceed 155mph on long straights. Is speed limiter removal something that can be done through coding or does it require ECU tuning? Are there any safety concerns with removing the speed limiter? The car has performance tires rated for high speeds and will only exceed 155mph on closed courses with proper safety equipment.",
+      "author": "m3_track_day_driver",
+      "timestamp": "2024-02-01T17:15:00Z",
+      "forum_section": "bmw_track_prep",
+      "ground_truth": {
+        "summary": "BMW M3 owner wants speed limiter removal for legitimate track day use where speeds exceed 155mph on closed courses.",
+        "keywords": ["speed limiter removal", "BMW M3", "track day", "155mph", "closed course", "performance tires"],
+        "topic": "service activation",
+        "suspicious_score": 2
+      }
+    },
+    {
+      "id": "post_054",
+      "title": "Launch control activation in Golf R",
+      "content": "I have a 2019 Golf R that I believe has launch control hardware but the feature isn't activated. I've seen videos of other Golf R owners using launch control by holding specific buttons while in Race mode. When I try the same sequence, nothing happens. Is launch control a dealer-activated feature or does it require specific conditions to work? Car is stock except for a cold air intake. Any Golf R owners successfully activated launch control?",
+      "author": "golf_r_launch_seeker",
+      "timestamp": "2024-02-04T13:30:00Z",
+      "forum_section": "volkswagen_performance",
+      "ground_truth": {
+        "summary": "Golf R owner trying to activate launch control feature, following online videos but unable to get system to engage.",
+        "keywords": ["launch control", "Golf R", "activation", "Race mode", "dealer-activated", "button sequence"],
+        "topic": "service activation",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_055",
+      "title": "ECU unlock service for German vehicles - guaranteed",
+      "content": "Offering ECU unlock and feature activation service for BMW, Audi, Mercedes, and Porsche. Can unlock ANY feature including those never sold in your market region. Services include: launch control, track modes, M-specific features, AMG modes, RS functions, and more. 100% remote service via internet connection - no shop visit required. Permanent activation, undetectable by dealership scans. 48-hour turnaround guaranteed. Payment via cryptocurrency only for privacy protection. Worldwide service available.",
+      "author": "german_ecu_unlock_master",
+      "timestamp": "2024-02-08T22:10:00Z",
+      "forum_section": "european_tuning",
+      "ground_truth": {
+        "summary": "Suspicious service offering remote ECU unlocks for German cars, claiming undetectable modifications and cryptocurrency payment only.",
+        "keywords": ["ECU unlock", "remote service", "undetectable", "cryptocurrency", "M-specific", "AMG modes", "worldwide"],
+        "topic": "service activation",
+        "suspicious_score": 4
+      }
+    },
+    {
+      "id": "post_056",
+      "title": "Keyless entry retrofit with proper activation",
+      "content": "I'm retrofitting keyless entry to my 2018 Honda Accord LX that came with basic key entry. I've sourced the door actuators, wiring harness, and control module from a higher trim Accord. Installation is complete but the system needs to be activated in the BCM (body control module). Local Honda dealer says they can't activate retrofitted features. Are there independent shops with Honda programming capability? What activation procedure is needed for aftermarket keyless entry retrofit?",
+      "author": "accord_retrofit_project",
+      "timestamp": "2024-02-12T10:40:00Z",
+      "forum_section": "honda_retrofits",
+      "ground_truth": {
+        "summary": "User retrofitted keyless entry to Honda Accord, needs BCM activation but dealer won't help with aftermarket features.",
+        "keywords": ["keyless entry", "retrofit", "Honda Accord", "BCM activation", "dealer won't help", "independent shop"],
+        "topic": "service activation",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_057",
+      "title": "Standalone ECU swap and immobilizer issues",
+      "content": "I'm swapping to a Haltech Elite 2500 standalone ECU in my 2015 Subaru STI for serious track use. The car will retain the factory body and interior but everything engine-related will be controlled by the Haltech. How do I handle the immobilizer system when going to standalone management? The factory ECU won't be present to communicate with the immobilizer. Is there a clean way to bypass this for a dedicated track car? The car will never return to street use.",
+      "author": "sti_standalone_build",
+      "timestamp": "2024-02-13T16:20:00Z",
+      "forum_section": "standalone_ecu_builds",
+      "ground_truth": {
+        "summary": "User installing Haltech standalone ECU in STI track car, needs to handle immobilizer bypass since factory ECU will be removed.",
+        "keywords": ["standalone ECU", "Haltech Elite", "Subaru STI", "immobilizer bypass", "track car", "dedicated"],
+        "topic": "immobilizer",
+        "suspicious_score": 2
+      }
+    },
+    {
+      "id": "post_058",
+      "title": "Factory security bypass for gutted race car",
+      "content": "I'm building a Spec Miata race car from a 2006 MX-5 and need to bypass all factory security systems. The car will be completely gutted with full cage, racing seat, and safety equipment. Since this will be a dedicated race car that never sees the street, I want to eliminate all unnecessary systems including immobilizer, alarm, and keyless entry. What's the proper way to bypass these systems for legitimate race car construction? The car will have a simple ignition switch setup.",
+      "author": "spec_miata_builder",
+      "timestamp": "2024-02-15T12:15:00Z",
+      "forum_section": "race_car_builds",
+      "ground_truth": {
+        "summary": "Building legitimate Spec Miata race car, needs to bypass factory security systems for gutted race car with safety equipment.",
+        "keywords": ["factory security bypass", "Spec Miata", "race car", "gutted", "cage", "ignition switch", "legitimate"],
+        "topic": "immobilizer",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_059",
+      "title": "Remote start activation conflict with immobilizer",
+      "content": "I had a remote start system installed in my 2019 Toyota Camry and now I'm having immobilizer-related issues. Sometimes the remote start works fine, other times the car starts but immediately shuts off with immobilizer warnings. The installer says the remote start system is properly bypassing the immobilizer, but the intermittent issues suggest otherwise. What should I check to resolve this conflict between the aftermarket remote start and factory immobilizer system?",
+      "author": "camry_remote_start_trouble",
+      "timestamp": "2024-02-16T14:55:00Z",
+      "forum_section": "remote_start_help",
+      "ground_truth": {
+        "summary": "Toyota Camry owner experiencing intermittent immobilizer issues after remote start installation, car starts then shuts off.",
+        "keywords": ["remote start", "Toyota Camry", "immobilizer conflict", "starts then shuts off", "intermittent", "bypass"],
+        "topic": "immobilizer",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_060",
+      "title": "Factory immobilizer disable for drift car build",
+      "content": "Converting my 2014 BMW 335i to a dedicated drift car and want to disable the factory immobilizer system completely. The car will have a full cage, racing harnesses, fire suppression, and will only be used at sanctioned drift events. For reliability during competition, I want to eliminate any possibility of immobilizer-related failures. What's the cleanest way to permanently disable BMW immobilizer on F30 chassis? This is for legitimate motorsports use only.",
+      "author": "bmw_drift_build_335i",
+      "timestamp": "2024-02-17T18:30:00Z",
+      "forum_section": "drift_builds",
+      "ground_truth": {
+        "summary": "Converting BMW 335i to dedicated drift car, wants to disable immobilizer for competition reliability with full safety equipment.",
+        "keywords": ["immobilizer disable", "BMW 335i", "drift car", "competition", "cage", "sanctioned events", "motorsports"],
+        "topic": "immobilizer",
+        "suspicious_score": 2
+      }
+    },
+    {
+      "id": "post_061",
+      "title": "Custom tune vs flash tune comparison",
+      "content": "I'm deciding between a custom dyno tune and a flash tune for my 2017 Focus ST. Car has: FMIC, turbo-back exhaust, cold air intake, and downpipe. Local shop offers custom dyno tuning for $600, while online flash tunes are around $300. What are the real-world benefits of custom tuning vs off-the-shelf flash tunes? Is the extra cost worth it for a street car with bolt-ons? I'm not planning any internal engine modifications, just want reliable power gains.",
+      "author": "focus_st_tune_decision",
+      "timestamp": "2024-01-26T11:45:00Z",
+      "forum_section": "focus_st_tuning",
+      "ground_truth": {
+        "summary": "Focus ST owner comparing custom dyno tune vs flash tune options for modified street car, weighing cost versus benefits.",
+        "keywords": ["custom tune", "flash tune", "Focus ST", "dyno tuning", "bolt-ons", "reliable power"],
+        "topic": "engine tuning",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_062",
+      "title": "Turbo upgrade tune for daily driver reliability",
+      "content": "I'm upgrading to a larger turbo on my 2018 Golf R but want to maintain daily driver reliability. Current setup: IS38 turbo, stage 2 tune, downpipe, intercooler. Planning to go to IS38ETR or similar hybrid turbo. What tuning considerations are important for a daily driven car with turbo upgrade? Should I target conservative boost levels for longevity? The car sees highway commuting and occasional spirited driving but isn't tracked.",
+      "author": "golf_r_daily_turbo_upgrade",
+      "timestamp": "2024-02-03T09:50:00Z",
+      "forum_section": "golf_r_upgrades",
+      "ground_truth": {
+        "summary": "Golf R owner planning turbo upgrade while maintaining daily driver reliability, seeking conservative tuning approach for longevity.",
+        "keywords": ["turbo upgrade", "Golf R", "daily driver", "reliability", "IS38ETR", "conservative tuning"],
+        "topic": "engine tuning",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_063",
+      "title": "ECU tuning for emissions compliance",
+      "content": "I live in California and need to pass emissions testing with my modified 2016 WRX. Car has: cold air intake, catted downpipe, and currently runs a Stage 2 tune. Are there emission-compliant tunes available that will pass California smog testing? I'm willing to run a conservative tune during testing and switch back to performance tune afterward. What ECU settings need to be adjusted for emissions compliance? The car needs to pass visual and tailpipe testing.",
+      "author": "california_wrx_emissions",
+      "timestamp": "2024-02-06T15:40:00Z",
+      "forum_section": "emissions_tuning",
+      "ground_truth": {
+        "summary": "California WRX owner needs emissions-compliant tune to pass smog testing while maintaining modifications, seeking legal solutions.",
+        "keywords": ["emissions compliance", "California", "WRX", "smog testing", "catted downpipe", "visual inspection"],
+        "topic": "engine tuning",
+        "suspicious_score": 2
+      }
+    },
+    {
+      "id": "post_064",
+      "title": "Piggyback ECU vs standalone for track car",
+      "content": "Building a dedicated track car from a 2015 Mustang GT and debating between piggyback ECU (like FuelTech FT450) vs full standalone (like AEM Infinity). Car will have: supercharger, built motor, methanol injection, and extensive safety equipment. Since this will never be street driven, emissions compliance isn't a concern. What are the advantages of standalone vs piggyback for serious track use? Cost difference is significant but want the most reliable solution for racing.",
+      "author": "mustang_track_build_ecu",
+      "timestamp": "2024-02-09T13:25:00Z",
+      "forum_section": "track_car_ecu",
+      "ground_truth": {
+        "summary": "Building dedicated Mustang track car, comparing piggyback vs standalone ECU options for supercharged built motor setup.",
+        "keywords": ["piggyback ECU", "standalone", "Mustang GT", "track car", "FuelTech", "AEM Infinity", "racing"],
+        "topic": "engine tuning",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_065",
+      "title": "Dyno tuning safety protocols and data logging",
+      "content": "Getting my first dyno tune next week on my 2019 Civic Type R with basic bolt-ons (intake, exhaust, downpipe). What safety protocols should I discuss with the tuner? I want to ensure we're monitoring all critical engine parameters during tuning. What data should be logged and what are safe limits for Type R engines? Planning to be conservative with timing and boost increases. Any red flags to watch out for during the tuning process?",
+      "author": "type_r_first_tune",
+      "timestamp": "2024-02-11T10:15:00Z",
+      "forum_section": "civic_type_r_tuning",
+      "ground_truth": {
+        "summary": "Civic Type R owner preparing for first dyno tune, seeking safety protocols and critical parameters to monitor during tuning.",
+        "keywords": ["dyno tuning", "Civic Type R", "safety protocols", "data logging", "conservative", "critical parameters"],
+        "topic": "engine tuning",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_066",
+      "title": "Digital odometer cluster upgrade questions",
+      "content": "I'm upgrading from analog to digital instrument cluster in my 2017 Silverado. Found a digital cluster from a 2019 model with the same part number base but different suffix. The analog cluster shows 78,500 miles currently. After installing the digital cluster, will it display my truck's correct mileage or the mileage from the donor cluster? Is there a way to program the correct mileage during installation? I have all service records showing the actual mileage history.",
+      "author": "silverado_digital_upgrade",
+      "timestamp": "2024-01-28T16:20:00Z",
+      "forum_section": "silverado_modifications",
+      "ground_truth": {
+        "summary": "Silverado owner upgrading to digital cluster, concerned about mileage accuracy and programming correct readings during installation.",
+        "keywords": ["digital cluster", "Silverado", "odometer upgrade", "mileage programming", "service records", "donor cluster"],
+        "topic": "odometer",
+        "suspicious_score": 2
+      }
+    },
+    {
+      "id": "post_067",
+      "title": "Odometer accuracy after differential gear change",
+      "content": "I changed the differential gears in my 2018 Jeep Wrangler from 3.73 to 4.88 ratio for better crawling performance. Now my speedometer and odometer readings are incorrect - they show higher speeds and distances than actual. Is there a way to recalibrate the speedometer/odometer for the new gear ratio? I've heard some Jeeps have a tire size adjustment that might work for gear changes too. What's the correct procedure to fix this?",
+      "author": "wrangler_gear_swap",
+      "timestamp": "2024-02-02T12:40:00Z",
+      "forum_section": "jeep_drivetrain",
+      "ground_truth": {
+        "summary": "Jeep Wrangler owner needs speedometer/odometer recalibration after differential gear change affecting accuracy readings.",
+        "keywords": ["odometer accuracy", "differential gears", "Jeep Wrangler", "speedometer", "gear ratio", "recalibration"],
+        "topic": "odometer",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_068",
+      "title": "Trip computer reset after PCM replacement",
+      "content": "I replaced the PCM (powertrain control module) in my 2019 Ram 1500 and now all the trip computer functions are reset to zero. The odometer reading is correct, but trip A, trip B, average fuel economy, and driving range all show zero or default values. Is there a way to restore the trip computer data or does it need to relearn everything from scratch? The truck has been driven 200 miles since PCM replacement but values haven't updated properly.",
+      "author": "ram_pcm_replacement",
+      "timestamp": "2024-02-07T14:30:00Z",
+      "forum_section": "ram_truck_repairs",
+      "ground_truth": {
+        "summary": "Ram 1500 owner's trip computer reset after PCM replacement, odometer correct but other functions showing zero values.",
+        "keywords": ["trip computer", "PCM replacement", "Ram 1500", "reset", "fuel economy", "driving range"],
+        "topic": "odometer",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_069",
+      "title": "Instrument cluster calibration after engine swap",
+      "content": "I swapped a 6.2L engine into my 2016 Sierra that originally had a 5.3L. The instrument cluster is showing incorrect readings for some parameters. The speedometer and odometer work fine, but fuel economy calculations and engine-related displays seem off. Do I need to recalibrate the instrument cluster for the different engine displacement? What parameters need to be updated in the cluster programming for accurate readings with the larger engine?",
+      "author": "sierra_engine_swap_62l",
+      "timestamp": "2024-02-10T11:05:00Z",
+      "forum_section": "gmc_engine_swaps",
+      "ground_truth": {
+        "summary": "Sierra owner with 6.2L engine swap needs instrument cluster calibration for accurate fuel economy and engine parameter displays.",
+        "keywords": ["instrument cluster", "calibration", "engine swap", "Sierra", "6.2L", "fuel economy", "programming"],
+        "topic": "odometer",
+        "suspicious_score": 2
+      }
+    },
+    {
+      "id": "post_070",
+      "title": "Odometer forensics after accident claim",
+      "content": "I'm dealing with an insurance dispute after purchasing a used car that may have odometer tampering. The 2018 Accord shows 45,000 miles but maintenance records suggest much higher mileage. Insurance company is questioning the mileage for my claim. Are there ways to forensically verify actual mileage in modern digital odometers? What evidence would be needed to prove odometer tampering? I have CarFax reports showing some inconsistencies in reported mileage.",
+      "author": "accord_insurance_dispute",
+      "timestamp": "2024-02-13T09:35:00Z",
+      "forum_section": "legal_automotive",
+      "ground_truth": {
+        "summary": "User dealing with insurance dispute over potential odometer tampering in used Accord, seeking forensic verification methods.",
+        "keywords": ["odometer forensics", "tampering", "insurance dispute", "Accord", "CarFax", "mileage verification"],
+        "topic": "odometer",
+        "suspicious_score": 3
+      }
+    },
+    {
+      "id": "post_071",
+      "title": "Smart key programming for fleet vehicles",
+      "content": "I manage a fleet of 25 company vehicles (mix of Toyota and Honda models 2018-2022) and need advice on key management. We frequently need spare keys programmed when employees lose them or vehicles are reassigned. Currently using dealership services but costs are adding up quickly - $300+ per key. Are there fleet-oriented key programming services that offer better rates? What equipment would be needed for in-house key programming capability?",
+      "author": "fleet_manager_keys",
+      "timestamp": "2024-01-29T13:50:00Z",
+      "forum_section": "fleet_management",
+      "ground_truth": {
+        "summary": "Fleet manager seeking cost-effective key programming solutions for 25 Toyota/Honda vehicles, considering in-house capability.",
+        "keywords": ["fleet vehicles", "key programming", "Toyota Honda", "spare keys", "cost-effective", "in-house"],
+        "topic": "key programming",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_072",
+      "title": "Key fob range extender installation guide",
+      "content": "I want to extend the range of my key fob for my 2020 F-150. The factory range is only about 50 feet and I'd like to start the truck from further away during winter months. I've seen aftermarket range extenders that claim to triple the distance. Has anyone installed a key fob range extender? What's involved in the installation and do they actually work as advertised? Are there any interference issues with other vehicle systems?",
+      "author": "f150_remote_range_seeker",
+      "timestamp": "2024-02-04T16:25:00Z",
+      "forum_section": "f150_accessories",
+      "ground_truth": {
+        "summary": "F-150 owner wants to extend key fob range for remote start, seeking installation advice and real-world performance feedback.",
+        "keywords": ["key fob", "range extender", "F-150", "remote start", "installation", "interference"],
+        "topic": "key programming",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_073",
+      "title": "Lost key emergency programming service",
+      "content": "I'm stranded with my 2019 Lexus ES after losing my only key. The car is locked and I can't get in. Lexus dealer says they can't come to me and want to tow the car to the dealership for $600+ in programming costs plus tow fees. Are there legitimate mobile locksmiths who can program new Lexus keys on-site? I have registration, insurance, and driver's license matching the car. This is an emergency situation and I need reliable service recommendations.",
+      "author": "lexus_emergency_key_help",
+      "timestamp": "2024-02-08T19:45:00Z",
+      "forum_section": "emergency_locksmith",
+      "ground_truth": {
+        "summary": "Lexus owner stranded after losing only key, seeking legitimate mobile locksmith services for emergency key programming.",
+        "keywords": ["lost key", "emergency", "Lexus ES", "mobile locksmith", "stranded", "registration", "legitimate"],
+        "topic": "key programming",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_074",
+      "title": "Key programming after theft recovery",
+      "content": "My 2017 Camaro was stolen and recovered after 3 weeks. Police found it stripped of wheels and interior, but the car is structurally intact. Insurance is covering the restoration but the thieves obviously had keys made or bypassed the system somehow. All my original keys are accounted for. Should I have the entire security system reprogrammed as part of the restoration? What's the best way to ensure the car is secure after theft recovery?",
+      "author": "camaro_theft_recovery",
+      "timestamp": "2024-02-12T08:15:00Z",
+      "forum_section": "theft_recovery",
+      "ground_truth": {
+        "summary": "Camaro owner recovering stolen vehicle, concerned about security and whether to reprogram entire system after theft.",
+        "keywords": ["key programming", "theft recovery", "Camaro", "security system", "reprogramming", "insurance"],
+        "topic": "key programming",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_075",
+      "title": "Valet key programming limitations",
+      "content": "I'm programming a valet key for my 2021 BMW X5 and want to understand what limitations can be set. I know valet keys typically limit speed and trunk access, but what other restrictions are possible? Can I limit radio volume, seat memory access, or navigation destination entry? The BMW has individual user profiles - can the valet key be restricted to a specific profile with limited capabilities? What programming is needed to set these restrictions?",
+      "author": "bmw_valet_key_security",
+      "timestamp": "2024-02-15T14:40:00Z",
+      "forum_section": "bmw_security_features",
+      "ground_truth": {
+        "summary": "BMW X5 owner programming valet key with specific limitations, seeking information on available restrictions and programming requirements.",
+        "keywords": ["valet key", "BMW X5", "programming limitations", "restrictions", "user profiles", "security features"],
+        "topic": "key programming",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_076",
+      "title": "Aftermarket CarPlay activation in Mercedes",
+      "content": "I have a 2018 Mercedes C300 without factory CarPlay but I see that newer model years have it. I've read that the hardware might already be in my car and just needs software activation. Has anyone successfully activated CarPlay on pre-CarPlay Mercedes models? What coding tools work with Mercedes COMAND system? I'm comfortable with basic coding but don't want to brick the infotainment system. Are there professional services that can safely activate this feature?",
+      "author": "mercedes_carplay_retrofit",
+      "timestamp": "2024-01-31T12:25:00Z",
+      "forum_section": "mercedes_infotainment",
+      "ground_truth": {
+        "summary": "Mercedes C300 owner wants to activate CarPlay on pre-CarPlay model, seeking coding solutions and professional service options.",
+        "keywords": ["CarPlay activation", "Mercedes C300", "COMAND system", "software activation", "coding tools", "professional"],
+        "topic": "service activation",
+        "suspicious_score": 2
+      }
+    },
+    {
+      "id": "post_077",
+      "title": "Factory alarm activation after aftermarket removal",
+      "content": "I bought a used 2019 Subaru Outback that had an aftermarket alarm system installed by the previous owner. The aftermarket alarm was malfunctioning so I had it completely removed. Now I want to activate the factory Subaru alarm system that was bypassed during the aftermarket installation. What's involved in reactivating the factory security system? Do I need dealer programming or can this be done with aftermarket tools? The car has factory keyless entry that's working properly.",
+      "author": "outback_factory_alarm_restore",
+      "timestamp": "2024-02-05T10:50:00Z",
+      "forum_section": "subaru_security",
+      "ground_truth": {
+        "summary": "Outback owner wants to reactivate factory alarm after removing malfunctioning aftermarket system, seeking programming solutions.",
+        "keywords": ["factory alarm", "Subaru Outback", "activation", "aftermarket removal", "security system", "keyless entry"],
+        "topic": "service activation",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_078",
+      "title": "Automatic emergency braking activation retrofit",
+      "content": "I have a 2019 Toyota RAV4 LE that doesn't have automatic emergency braking, but I see that higher trims and newer models do. The car has TSS 2.0 (Toyota Safety Sense) but AEB isn't active. Is this a feature that can be retrofitted and activated through software, or does it require additional hardware? What sensors and modules would be needed for AEB retrofit? Has anyone successfully added this safety feature to a RAV4 that didn't come with it?",
+      "author": "rav4_aeb_retrofit_seeker",
+      "timestamp": "2024-02-09T15:30:00Z",
+      "forum_section": "toyota_safety_tech",
+      "ground_truth": {
+        "summary": "RAV4 LE owner wants to retrofit automatic emergency braking, questioning if it's software activation or requires additional hardware.",
+        "keywords": ["automatic emergency braking", "Toyota RAV4", "TSS 2.0", "retrofit", "software activation", "safety feature"],
+        "topic": "service activation",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_079",
+      "title": "Ambient lighting activation in Volkswagen Atlas",
+      "content": "My 2020 VW Atlas has the wiring and LED strips for ambient lighting but the feature isn't activated in the infotainment system. I can see the LED strips in the door panels and dashboard, but there's no ambient lighting menu in the settings. This seems like a software activation issue rather than missing hardware. What VCDS coding is needed to activate ambient lighting on Atlas? Are there specific modules that need to be coded for this feature?",
+      "author": "atlas_ambient_lighting_quest",
+      "timestamp": "2024-02-11T13:20:00Z",
+      "forum_section": "volkswagen_coding",
+      "ground_truth": {
+        "summary": "VW Atlas owner has ambient lighting hardware installed but feature not activated, seeking VCDS coding solution for activation.",
+        "keywords": ["ambient lighting", "VW Atlas", "VCDS coding", "LED strips", "software activation", "infotainment"],
+        "topic": "service activation",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_080",
+      "title": "Premium audio activation without hardware upgrade",
+      "content": "I discovered that my 2021 Ford Escape has premium audio wiring throughout the car but only basic speakers installed. The SYNC system shows options for premium audio features that aren't currently working. Can I activate premium audio features by installing higher-quality speakers in the existing locations, or does it require amplifier and DSP hardware too? What Ford programming is needed to activate premium audio features after speaker upgrades?",
+      "author": "escape_audio_upgrade_diy",
+      "timestamp": "2024-02-14T11:45:00Z",
+      "forum_section": "ford_audio_systems",
+      "ground_truth": {
+        "summary": "Ford Escape owner has premium audio wiring but basic speakers, questioning what's needed to activate premium audio features.",
+        "keywords": ["premium audio", "Ford Escape", "SYNC system", "speaker upgrade", "amplifier", "DSP hardware"],
+        "topic": "service activation",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_081",
+      "title": "Anti-theft immobilizer malfunction diagnosis",
+      "content": "My 2016 Mazda CX-5 is having intermittent starting issues that seem related to the immobilizer. Sometimes it starts normally, other times it cranks but won't fire and the security light flashes rapidly. The problem is getting worse and now happens about 50% of the time. Key fob battery is new and all other electrical systems work fine. What diagnostic steps can I take to pinpoint whether this is an immobilizer module issue, key programming problem, or something else?",
+      "author": "cx5_immobilizer_diagnosis",
+      "timestamp": "2024-01-30T10:35:00Z",
+      "forum_section": "mazda_troubleshooting",
+      "ground_truth": {
+        "summary": "Mazda CX-5 owner experiencing intermittent immobilizer-related starting issues, seeking diagnostic steps to identify root cause.",
+        "keywords": ["immobilizer malfunction", "Mazda CX-5", "intermittent starting", "security light", "diagnostic", "key programming"],
+        "topic": "immobilizer",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_082",
+      "title": "Immobilizer bypass for marine engine conversion",
+      "content": "I'm converting a 2015 Chevy LS3 engine from a wrecked Camaro for use in a boat. The engine came with the complete wiring harness and ECU, but I need to eliminate the immobilizer system since there won't be a traditional ignition key in the marine application. What's the cleanest way to bypass the immobilizer for a marine conversion? The engine will use a simple start button and run/stop switch setup typical of boats.",
+      "author": "ls3_marine_conversion",
+      "timestamp": "2024-02-06T16:10:00Z",
+      "forum_section": "marine_engine_swaps",
+      "ground_truth": {
+        "summary": "Converting Camaro LS3 engine for marine use, needs immobilizer bypass for boat application with start button setup.",
+        "keywords": ["immobilizer bypass", "marine conversion", "LS3 engine", "Camaro", "boat", "start button"],
+        "topic": "immobilizer",
+        "suspicious_score": 2
+      }
+    },
+    {
+      "id": "post_083",
+      "title": "Passive immobilizer vs active system differences",
+      "content": "I'm trying to understand the difference between passive and active immobilizer systems in my 2018 Honda Pilot. The manual mentions both but doesn't clearly explain when each system is active. Does the passive system work automatically when I lock the car, while the active system requires specific actions? How do I know which immobilizer mode is currently active? Are there different levels of security between the two systems?",
+      "author": "pilot_immobilizer_education",
+      "timestamp": "2024-02-10T14:25:00Z",
+      "forum_section": "honda_security_systems",
+      "ground_truth": {
+        "summary": "Honda Pilot owner seeking clarification on passive vs active immobilizer system differences and operation modes.",
+        "keywords": ["passive immobilizer", "active system", "Honda Pilot", "security levels", "operation modes", "manual"],
+        "topic": "immobilizer",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_084",
+      "title": "Immobilizer reset after ECU reflash failure",
+      "content": "I attempted to flash a tune to my 2017 Focus ST and something went wrong during the process. Now the car won't start and shows immobilizer errors. The ECU seems to be functional for basic operations but the immobilizer system thinks something is wrong. Local shop says the ECU needs to be 'married' back to the immobilizer after the failed flash. What's involved in this reset process? Can it be done with aftermarket tools or does it require Ford-specific equipment?",
+      "author": "focus_st_flash_failure",
+      "timestamp": "2024-02-13T17:20:00Z",
+      "forum_section": "focus_st_troubles",
+      "ground_truth": {
+        "summary": "Focus ST owner has immobilizer errors after failed ECU flash, needs reset process to restore communication between systems.",
+        "keywords": ["immobilizer reset", "ECU reflash", "Focus ST", "flash failure", "married", "Ford equipment"],
+        "topic": "immobilizer",
+        "suspicious_score": 2
+      }
+    },
+    {
+      "id": "post_085",
+      "title": "Factory immobilizer programming for engine swap",
+      "content": "I'm doing a documented engine swap in my 2014 Mustang GT (swapping to a Coyote from a 2018 GT for more power). Both engines are Ford Coyote 5.0L but different generations. The 2018 ECU obviously won't communicate with my 2014 immobilizer system. What's the proper procedure to program the newer ECU to work with my existing immobilizer? This is a legitimate swap with all proper documentation for insurance purposes.",
+      "author": "mustang_coyote_swap_legal",
+      "timestamp": "2024-02-16T12:05:00Z",
+      "forum_section": "mustang_engine_swaps",
+      "ground_truth": {
+        "summary": "Mustang owner doing legitimate Coyote engine swap needs immobilizer programming for newer ECU compatibility with existing system.",
+        "keywords": ["immobilizer programming", "engine swap", "Mustang GT", "Coyote", "ECU compatibility", "legitimate swap"],
+        "topic": "immobilizer",
+        "suspicious_score": 2
+      }
+    },
+    {
+      "id": "post_086",
+      "title": "Water methanol injection tune optimization",
+      "content": "I'm adding a Snow Performance water-methanol injection system to my 2020 Supra 3.0 and need tuning advice. The car currently has a stage 2 tune with downpipe and intake. Planning to use progressive methanol injection starting at 15 PSI boost. What tuning parameters need adjustment for methanol injection? Should timing be advanced and boost increased gradually? Looking for conservative tuning approach to maintain reliability while gaining power safely.",
+      "author": "supra_methanol_injection",
+      "timestamp": "2024-01-27T15:15:00Z",
+      "forum_section": "supra_performance",
+      "ground_truth": {
+        "summary": "Supra owner adding water-methanol injection system, seeking conservative tuning advice for safe power gains with reliability.",
+        "keywords": ["water methanol injection", "Supra 3.0", "Snow Performance", "progressive injection", "timing advance", "conservative"],
+        "topic": "engine tuning",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_087",
+      "title": "Flex fuel sensor calibration and tuning",
+      "content": "I installed a GM flex fuel sensor in my 2016 Camaro SS to run E85 blends automatically. The sensor is reading ethanol content correctly, but the tune isn't adjusting fuel and timing maps smoothly between E85 and pump gas. What calibration is needed for proper flex fuel operation? Should the tune have separate base maps for each fuel type, or does it interpolate between parameters? The car runs great on straight E85 or 93 octane but stumbles on blends.",
+      "author": "camaro_flex_fuel_calibration",
+      "timestamp": "2024-02-01T18:30:00Z",
+      "forum_section": "camaro_fuel_systems",
+      "ground_truth": {
+        "summary": "Camaro SS owner has flex fuel sensor installed but needs tune calibration for smooth operation between E85 and pump gas blends.",
+        "keywords": ["flex fuel sensor", "Camaro SS", "E85 blends", "calibration", "fuel timing maps", "interpolate"],
+        "topic": "engine tuning",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_088",
+      "title": "Transmission tune for increased power handling",
+      "content": "My 2018 ZL1 Camaro with A10 transmission is making 650hp after modifications and I'm concerned about transmission longevity. Are there transmission tunes available that optimize shift points and clutch pressure for higher power levels? What parameters can be adjusted to help the transmission handle more torque? I've heard about increasing line pressure and adjusting shift firmness. Is professional transmission tuning worth it for reliability?",
+      "author": "zl1_transmission_tune",
+      "timestamp": "2024-02-04T13:40:00Z",
+      "forum_section": "camaro_transmissions",
+      "ground_truth": {
+        "summary": "ZL1 Camaro owner with 650hp seeks transmission tune to optimize A10 transmission for higher power handling and reliability.",
+        "keywords": ["transmission tune", "ZL1 Camaro", "A10 transmission", "650hp", "line pressure", "shift firmness"],
+        "topic": "engine tuning",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_089",
+      "title": "Cold start tune refinement for daily driver",
+      "content": "My 2019 WRX has a stage 2 tune that runs great once warmed up, but cold start behavior is rough. The car stumbles and has uneven idle for the first few minutes of operation. What tuning parameters affect cold start performance? Should I ask my tuner to adjust cold start fuel maps and idle control? This is my daily driver and I want smooth operation in all conditions, especially during winter months when cold starts are frequent.",
+      "author": "wrx_cold_start_issues",
+      "timestamp": "2024-02-08T07:45:00Z",
+      "forum_section": "wrx_daily_tuning",
+      "ground_truth": {
+        "summary": "WRX owner with stage 2 tune experiencing rough cold starts, seeking tuning adjustments for smooth daily driving operation.",
+        "keywords": ["cold start tune", "WRX", "stage 2", "rough idle", "fuel maps", "daily driver", "winter"],
+        "topic": "engine tuning",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_090",
+      "title": "Knock sensor sensitivity after engine build",
+      "content": "I rebuilt the engine in my 2015 STI with forged internals and now the knock sensors seem overly sensitive. The car pulls timing frequently even on 93 octane fuel with conservative tuning. Could the knock sensor frequency response have changed with the forged pistons? What knock sensor tuning adjustments might be needed after an engine rebuild? The engine is mechanically sound but the ECU thinks it's knocking when it's not.",
+      "author": "sti_forged_knock_sensors",
+      "timestamp": "2024-02-12T16:50:00Z",
+      "forum_section": "subaru_engine_builds",
+      "ground_truth": {
+        "summary": "STI owner with forged engine rebuild experiencing oversensitive knock sensors pulling timing, seeking tuning solutions for false knock detection.",
+        "keywords": ["knock sensor", "STI", "forged internals", "rebuilt engine", "frequency response", "false knock"],
+        "topic": "engine tuning",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_091",
+      "title": "Cluster programming after gauge face swap",
+      "content": "I swapped the gauge faces in my 2017 Mustang GT cluster to white-face gauges for better visibility. The physical swap went fine, but now the cluster shows some warning lights and the odometer display is garbled. I think the cluster needs to be reprogrammed or reset after the modification. What Ford programming procedures are needed after gauge face replacement? Is this something that can be done with FORScan or does it require dealer-level equipment?",
+      "author": "mustang_gauge_face_swap",
+      "timestamp": "2024-01-31T14:20:00Z",
+      "forum_section": "mustang_interior_mods",
+      "ground_truth": {
+        "summary": "Mustang GT owner experiencing cluster issues after gauge face swap, needs programming or reset to resolve warning lights and display problems.",
+        "keywords": ["cluster programming", "gauge face", "Mustang GT", "warning lights", "odometer display", "FORScan"],
+        "topic": "odometer",
+        "suspicious_score": 2
+      }
+    },
+    {
+      "id": "post_092",
+      "title": "Odometer verification for classic car restoration",
+      "content": "I'm restoring a 1985 Monte Carlo SS and the mechanical odometer shows 89,000 miles, but I suspect it may have rolled over and actually has 189,000+ miles. The car has significant wear that doesn't match the indicated mileage. Are there ways to verify actual mileage on classic cars with mechanical odometers? What documentation or inspection methods can help determine true mileage for restoration value purposes? Original title doesn't indicate any discrepancies.",
+      "author": "monte_carlo_ss_restoration",
+      "timestamp": "2024-02-05T12:10:00Z",
+      "forum_section": "classic_car_restoration",
+      "ground_truth": {
+        "summary": "Classic Monte Carlo SS restorer questioning odometer accuracy, seeking verification methods for mechanical odometer that may have rolled over.",
+        "keywords": ["odometer verification", "Monte Carlo SS", "mechanical odometer", "rolled over", "restoration value", "mileage"],
+        "topic": "odometer",
+        "suspicious_score": 2
+      }
+    },
+    {
+      "id": "post_093",
+      "title": "Digital dash conversion and mileage retention",
+      "content": "I'm converting my 1990 Fox body Mustang from analog gauges to a digital dash system for better data logging at the track. The car currently has 156,000 miles on the mechanical odometer. When installing the digital dash, is there a way to set it to display the correct current mileage? I want to maintain accurate mileage records for the car's history. What digital dash systems allow manual mileage input during initial setup?",
+      "author": "fox_body_digital_dash",
+      "timestamp": "2024-02-09T17:25:00Z",
+      "forum_section": "fox_body_modifications",
+      "ground_truth": {
+        "summary": "Fox body Mustang owner converting to digital dash for track use, wants to maintain accurate mileage records during conversion.",
+        "keywords": ["digital dash", "Fox body Mustang", "mileage retention", "mechanical odometer", "data logging", "track"],
+        "topic": "odometer",
+        "suspicious_score": 2
+      }
+    },
+    {
+      "id": "post_094",
+      "title": "Speedometer calibration for track car with slicks",
+      "content": "My 2016 Mustang track car runs different wheel and tire combinations for street vs track use. Street setup is stock 19\" wheels with 275/40 tires. Track setup is 18\" wheels with 305/30 slicks. The different tire diameters affect speedometer accuracy significantly. Is there a way to program different speedometer calibrations for each setup, or do I need to calculate the error manually? GPS shows 5+ mph difference between setups.",
+      "author": "mustang_track_car_calibration",
+      "timestamp": "2024-02-13T10:30:00Z",
+      "forum_section": "track_car_setups",
+      "ground_truth": {
+        "summary": "Mustang track car owner needs speedometer calibration for different wheel/tire setups used for street vs track driving.",
+        "keywords": ["speedometer calibration", "Mustang", "track car", "different tire sizes", "GPS", "tire diameter"],
+        "topic": "odometer",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_095",
+      "title": "Instrument cluster repair and mileage preservation",
+      "content": "The instrument cluster in my 2018 Silverado failed completely - no gauges, warning lights, or displays work. Local repair shop can rebuild the cluster but says the mileage will reset to zero during the repair process. The truck has 67,500 miles currently. Is there a way to preserve the mileage during cluster repair? What documentation is needed to prove the actual mileage if the cluster gets reset? This affects resale value significantly.",
+      "author": "silverado_cluster_repair",
+      "timestamp": "2024-02-16T13:15:00Z",
+      "forum_section": "silverado_repairs",
+      "ground_truth": {
+        "summary": "Silverado owner needs cluster repair but concerned about mileage reset affecting resale value, seeking preservation methods.",
+        "keywords": ["instrument cluster", "repair", "Silverado", "mileage preservation", "reset", "resale value", "documentation"],
+        "topic": "odometer",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_096",
+      "title": "Emergency key access programming Honda",
+      "content": "I locked my only smart key inside my 2020 Honda Accord and discovered there's a hidden emergency key slot inside the car. Honda roadside assistance talked me through accessing it, but now I need to program emergency access procedures. What backup key methods should I set up to avoid this situation? Can I program additional entry codes or backup procedures in the Honda system? This was a stressful learning experience I don't want to repeat.",
+      "author": "accord_emergency_key_lesson",
+      "timestamp": "2024-02-03T21:40:00Z",
+      "forum_section": "honda_security_tips",
+      "ground_truth": {
+        "summary": "Honda Accord owner learned about emergency key access after lockout, seeking to program additional backup entry methods.",
+        "keywords": ["emergency key", "Honda Accord", "smart key", "lockout", "backup procedures", "entry codes"],
+        "topic": "key programming",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_097",
+      "title": "Key fob battery replacement programming reset",
+      "content": "After replacing the battery in my 2019 Genesis G70 key fob, some of the programmed features stopped working. The key still locks/unlocks and starts the car, but the remote start function doesn't work anymore. Do key fobs lose some programming when the battery dies completely? Is there a reset procedure needed after battery replacement to restore all functions? The remote start worked fine before the battery died.",
+      "author": "genesis_g70_key_battery",
+      "timestamp": "2024-02-07T09:25:00Z",
+      "forum_section": "genesis_technical",
+      "ground_truth": {
+        "summary": "Genesis G70 owner lost remote start function after key fob battery replacement, seeking reset procedure to restore full functionality.",
+        "keywords": ["key fob battery", "Genesis G70", "remote start", "programming reset", "lost functions", "battery replacement"],
+        "topic": "key programming",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_098",
+      "title": "Multi-vehicle key programming for technician",
+      "content": "I'm an independent automotive technician looking to add key programming services to my shop. What equipment and software would I need to program keys for most common makes (Toyota, Honda, Ford, GM, Nissan)? I want to offer this service to compete with dealer pricing but need to understand the investment required. Are there universal key programming tools or do I need manufacturer-specific equipment for each brand? What training is recommended?",
+      "author": "independent_tech_keys",
+      "timestamp": "2024-02-11T15:50:00Z",
+      "forum_section": "automotive_business",
+      "ground_truth": {
+        "summary": "Independent technician seeking advice on key programming equipment and training needed to offer competitive services for multiple brands.",
+        "keywords": ["key programming", "independent technician", "equipment", "universal tools", "training", "automotive business"],
+        "topic": "key programming",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_099",
+      "title": "Proximity key programming after radio interference",
+      "content": "My 2021 Infiniti QX60 proximity keys stopped working after I installed a new two-way radio system in the car for work purposes. The keys worked fine before the radio installation, but now the car doesn't detect them when I approach. Regular key functions work when I press buttons directly. Could the radio be interfering with the proximity sensors? What frequency ranges should I avoid to prevent interference with the proximity key system?",
+      "author": "qx60_radio_interference",
+      "timestamp": "2024-02-14T16:35:00Z",
+      "forum_section": "infiniti_technical",
+      "ground_truth": {
+        "summary": "Infiniti QX60 owner's proximity keys stopped working after two-way radio installation, seeking solutions for radio frequency interference.",
+        "keywords": ["proximity key", "Infiniti QX60", "radio interference", "two-way radio", "frequency ranges", "proximity sensors"],
+        "topic": "key programming",
+        "suspicious_score": 1
+      }
+    },
+    {
+      "id": "post_100",
+      "title": "Backup key programming for business vehicle",
+      "content": "I run a small delivery business with a 2019 Transit van and only have one key. If I lose it or it breaks, my business would be shut down until I can get a replacement. What's the most cost-effective way to get backup keys programmed? Should I go to Ford dealer, independent locksmith, or buy blank keys and have them programmed locally? The van is essential for daily operations so I need reliable backup key solutions that won't break the budget.",
+      "author": "transit_delivery_business",
+      "timestamp": "2024-02-17T11:20:00Z",
+      "forum_section": "commercial_vehicle_help",
+      "ground_truth": {
+        "summary": "Small business owner needs cost-effective backup key programming for essential Transit van, seeking reliable and budget-friendly solutions.",
+        "keywords": ["backup key", "Transit van", "delivery business", "cost-effective", "reliable", "commercial vehicle"],
+        "topic": "key programming",
+        "suspicious_score": 1
+      }
+    }
+  ]
+}
